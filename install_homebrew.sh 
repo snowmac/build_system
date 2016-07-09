@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "--> Checking for Homebrew"
+# Check to see if we have homebrew, if not lets get it
+if ! type brew &> /dev/null; then
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  $(source ~/.bash_profile)
+  $(source ~/.zshrc)
+fi
+
+echo '---> Done w/ homebrew'
