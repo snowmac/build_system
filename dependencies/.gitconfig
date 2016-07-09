@@ -1,0 +1,11 @@
+[alias]
+  st = status
+  ck = checkout
+  ckb = checkout -b
+[user]
+  name = Adam Bourg
+  email = Adam.bourg@gmail.com
+[push]
+  default = current
+[url "https://"]
+  insteadOf = git://
